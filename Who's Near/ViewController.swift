@@ -18,12 +18,8 @@ class ViewController: UIViewController, MKMapViewDelegate, CNContactPickerDelega
     let locationManager = CLLocationManager()
     let regionRadius: CLLocationDistance = 2000
     
-    let addresses = [
-        "9133 Wesley Place Dr Knoxville Tennessee 37922",
-        "8875 Carriage House Way Knoxville TN 37923",
-        "9040 Highbridge Knoxville TN 37022",
-        ]
-    var name: String = "Mike"
+    
+    var name: String = ""
     var phone: String = ""
     var formattedAddress: String = ""
     var locStr:String = ""
@@ -61,12 +57,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CNContactPickerDelega
                 }
             }
         }
-      
-//        for anno in annotations {
-//            mapView.addAnnotation(anno)
-//           
-//        }
-        
     }
     
     override func viewDidAppear(animated: Bool) {
